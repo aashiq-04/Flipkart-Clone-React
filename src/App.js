@@ -1,23 +1,28 @@
 import logo from './logo.svg';
-import './App.css';
+import Navbar from './navbar';
+import Slide from './slide';
+import Top from './top';
 
 function App() {
+  const slides = [
+    { url: "https://rukminim1.flixcart.com/fk-p-flap/50/50/image/645cf9502f202096.jpg?q=50" },
+    { url: "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/d6dc40011f48d2da.jpg?q=50" },
+    { url: "https://rukminim1.flixcart.com/fk-p-flap/50/50/image/9ec62d3c41932728.jpg?q=50" },
+    { url: "https://rukminim1.flixcart.com/fk-p-flap/50/50/image/30b0e892420793da.jpg?q=50" }
+  ]
+  const containerStyles={
+    width: "500px",
+    height: ""
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Top />
+      <div style={containerStyles}>
+        <Slide slides={slides} />
+      </div>
     </div>
   );
 }
