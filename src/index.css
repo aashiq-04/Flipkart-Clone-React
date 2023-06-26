@@ -6,6 +6,7 @@
     font-family: "Quicksand";
     color: #333;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 a {
@@ -18,7 +19,7 @@ a {
     height: 50px;
     display: flex;
     justify-content: center;
-    position:fixed;
+    position: fixed;
     z-index: 3;
     /* padding-bottom:20px ; */
 
@@ -341,35 +342,146 @@ a {
     width: 100%;
     height: 280px;
     /* position: absolute; */
+    overflow-y: hidden;
 }
 
 .img1 {
     width: 100%;
     height: 280px;
 }
-.left-button{
+
+.left-button {
     align-items: center;
     font-size: 50px;
     width: 47px;
     height: 104px;
-    border-top-right-radius:5px solid white ;
-    border-bottom-right-radius:5px solid white;
+    border-top-right-radius: 5px solid white;
+    border-bottom-right-radius: 5px solid white;
     z-index: 2;
     position: absolute;
-    
+
 }
-.right-button{
+
+.right-button {
     width: 47px;
     height: 104px;
     font-size: 50px;
-    border-top-left-radius:5px solid white;
-    border-bottom-left-radius:5px solid white;
+    border-top-left-radius: 5px solid white;
+    border-bottom-left-radius: 5px solid white;
     z-index: 2;
     position: absolute;
     right: 0;
+    margin-right: 10px;
 }
-.sample{
-    height: 900px;
+
+.electronic {
+    display: flex;
     width: 100%;
-    background-color: #212121;
+    height: 380px;
+    /* background-color: #2874f0; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.elecButtonImage {
+    height: 90%;
+    width: 230px;
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90");
+    background-position: 0px bottom;
+    background-repeat: no-repeat;
+}
+
+.BOE {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px 10px 50px;
+}
+
+.BOE h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.view1 {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.view1 a {
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    /* align-items: center; */
+    cursor: pointer;
+}
+
+.itemsE {
+    width: calc(100% - 230px);
+    height: 342px;
+    /* background-color: #ffe500; */
+    overflow: hidden;
+}
+.itemsE1{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.Eitems{
+    width: 232px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.Eanch{
+    padding: 25px 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-height: 366px;
+    text-align: center;
+}
+.Eimg{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+
+}
+.Eimg img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    opacity: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+.Elastdiv{
+    padding-top: 7px;
+    opacity: .6;
+}
+.Efirstdiv{
+    font-weight: 900;
+    padding-top: 7px;
+}
+.Esecdiv{
+    font-weight: 500;
+    padding-top: 7px;
+    color: green;
 }
