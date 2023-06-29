@@ -127,6 +127,7 @@ a {
     margin: 0 20px;
     justify-content: flex-end;
     flex: 0 0 auto;
+    overflow: hidden;
 }
 
 .log {
@@ -138,11 +139,13 @@ a {
     line-height: 20px;
     font-weight: 500;
     color: #fff;
+    overflow: hidden;
 }
 
 .l {
     display: inline-block;
     position: relative;
+    overflow: hidden;
 }
 
 .l a {
@@ -378,7 +381,6 @@ a {
     display: flex;
     width: 100%;
     height: 380px;
-    /* background-color: #2874f0; */
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -428,25 +430,30 @@ a {
 }
 
 .itemsE {
-    width: calc(100% - 230px);
+    width: calc(100% - 180px);
     height: 342px;
     /* background-color: #ffe500; */
     overflow: hidden;
 }
-.itemsE1{
+
+.itemsE1 {
     overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: row;
     position: relative;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
 }
-.Eitems{
-    width: 232px;
+
+.Eitems {
+    width: 210px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    border-left: 2px solid rgba(0, 0, 0, .2);
 }
-.Eanch{
+
+.Eanch {
     padding: 25px 15px;
     display: inline-block;
     vertical-align: top;
@@ -454,14 +461,16 @@ a {
     max-height: 366px;
     text-align: center;
 }
-.Eimg{
+
+.Eimg {
     height: 200px;
     width: 200px;
     position: relative;
     margin: 0 auto;
 
 }
-.Eimg img{
+
+.Eimg img {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -472,16 +481,59 @@ a {
     max-width: 100%;
     max-height: 100%;
 }
-.Elastdiv{
+
+.Elastdiv {
     padding-top: 7px;
     opacity: .6;
 }
-.Efirstdiv{
-    font-weight: 900;
-    padding-top: 7px;
-}
-.Esecdiv{
+
+.Efirstdiv {
     font-weight: 500;
     padding-top: 7px;
-    color: green;
+}
+
+.Esecdiv {
+    font-weight: 700;
+    padding-top: 7px;
+    color: black;
+}
+
+.Eright-button {
+    width: 47px;
+    height: 104px;
+    font-size: 30px;
+    border-top-left-radius: 5px solid white;
+    border-bottom-left-radius: 5px solid white;
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.toys {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    flex-direction: column;
+}
+.toy-top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.TT-head{
+    width: 100%;
+    height: 28px;
+    font-size: 20px;
+    font-weight: 800 ;
+    line-height: 20px;
+}
+
+.itemsT {
+    width: auto;
+    background-color: #2874f0;
 }

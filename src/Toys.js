@@ -1,7 +1,14 @@
 const Toys = () => {
     return ( 
         <div className="toys">
-            BLANK
+            <div className="toy-top">
+                <div className="TT-head">
+                Beauty,Food, Toys & more
+                </div>
+            </div>
+            <div className="itemsT">
+
+            </div>
         </div>
      );
 }
