@@ -1,4 +1,8 @@
+
+
 const Toys = () => {
+
+    
     return (
         <div className="toys">
             <div className="toy-top">
@@ -61,7 +65,8 @@ const Toys = () => {
                         <div className="Tdiv2">Up to 70% Off </div>
                     </a>
                 </div>
-                <button className="Tright-button"> &gt;</button>
+                
+                <button className="Tright-button" > &gt;</button>
             </div>
         </div>
     );

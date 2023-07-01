@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const Navbar = () => {
+    // const[hover,setHover]=useState();
     return (
         <div className="navbar">
 
@@ -31,10 +34,11 @@ const Navbar = () => {
                 <div className="login">
                     <div className="log">
                         <div className="l">
-                            <div>
+                            <div className="l1">
                                 <a href="#">Login</a>
                             </div>
                         </div>
+                        <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="drop"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_2gTTdy"></path></svg>
                     </div>
                 </div>
                 <div className="seller">
